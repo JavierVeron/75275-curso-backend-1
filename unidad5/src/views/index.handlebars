@@ -1,3 +1,13 @@
-<h1 class="fw-bold bg-dark text-warning">{{nombre}}</h1>
+<h1 class="fw-bold bg-dark text-warning">{{usuario.nombre}} #{{usuario.id}}</h1>
+    {{#if usuario.esAdmin}}
+        <p>Es Administrador!</p>
+        <ul>
+        {{#each frutas}}
+            <li>{{this.nombre}} ${{this.precio}}</li>
+        {{/each}}
+        </ul>
+    {{else}}
+        <p>Es Usuario</p>
+    {{/if}}
 <h3 class="fw-light">Curso de Backend I</h3>
 <p><img src="images/hamburguesa.jpg" alt="hamburguesa"></p>

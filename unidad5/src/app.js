@@ -23,7 +23,13 @@ express.urlencoded({extended:true});
 app.use("/api/users", usersRouter);
 app.use("/api/pets", petsRouter);
 app.use("/", (req, res) => {
-    const usuario = {id:1, nombre:"Fabian Acosta"}
+    const usuario = {id:1, nombre:"Fabian Acosta", esAdmin:false}
+    const frutas = [
+        {id:1, nombre:"Manzanas", precio:500},
+        {id:2, nombre:"Bananas", precio:600},
+        {id:3, nombre:"Naranjas", precio:700},
+        {id:4, nombre:"Kiwis", precio:800}
+    ]
 
-    res.render("index", usuario);
+    res.render("index", {usuario:usuario, frutas:frutas});
 })
