@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "42806216-ba07-47a6-ac2a-273dfc39891c",
+		"name": "Coderhouse Backend (75275)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20279544"
+	},
+	"item": [
+		{
+			"name": "Unidad 5",
+			"item": [
+				{
+					"name": "Pets",
+					"item": [
+						{
+							"name": "Get Pets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pets",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add New Pet",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nombre",
+											"value": "Gatito",
+											"type": "text"
+										},
+										{
+											"key": "categoria",
+											"value": "gato",
+											"type": "text"
+										},
+										{
+											"key": "imagen",
+											"type": "file",
+											"src": "/C:/Users/javie/Downloads/gato-siames.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pets",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pets"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add New User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Ana Liotta\",\r\n    \"email\":\"anitaliotta@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Unidad 8",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Alexis\",\r\n    \"apellido\":\"Herrera\",\r\n    \"email\":\"aleherrera@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit User",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Ignacio\",\r\n    \"apellido\":\"Martinez\",\r\n    \"email\":\"nachomartinez@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/68115a61597ba721f0482888",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"68115a61597ba721f0482888"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/68115a61597ba721f0482885",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"68115a61597ba721f0482885"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Estudiantes",
+					"item": [
+						{
+							"name": "Get Estudiantes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/estudiantes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"estudiantes",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Estudiante",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Alexis\",\r\n    \"apellido\":\"Herrera\",\r\n    \"edad\":23,\r\n    \"dni\":22222333,\r\n    \"curso\":\"Backend I\",\r\n    \"nota\":8\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/estudiantes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"estudiantes",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Estudiante",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"edad\":25\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/estudiantes/681165252c6a188aa9406a04",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"estudiantes",
+										"681165252c6a188aa9406a04"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Estudiantes",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/estudiantes/681165252c6a188aa9406a04",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"estudiantes",
+										"681165252c6a188aa9406a04"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

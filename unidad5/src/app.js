@@ -17,7 +17,7 @@ app.listen(port, () => {
 
 // Permite recibir los datos de un Post en formato json
 app.use(express.json());
-express.urlencoded({extended:true});
+app.use(express.urlencoded({extended:true}));
 
 // Configurar las rutas
 app.use("/api/users", usersRouter);
